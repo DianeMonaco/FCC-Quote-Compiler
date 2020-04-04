@@ -14,3 +14,4 @@ for i in range(0, len(lines) - 2, 2):
     quotesDB.write('    { "quote": "' + lines[i] + '", "author": "' + lines[i+1] + '" },\n' )
 
 quotesDB.write('    { "quote": "' + lines[-2] + '", "author": "' + lines[-1] + '" }\n  ]\n}')
+quotesDB.close()
